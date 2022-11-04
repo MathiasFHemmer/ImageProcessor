@@ -1,0 +1,47 @@
+image add D:\projetos\flower.png
+image add D:\projetos\satelite.png
+image add D:\projetos\cell.png
+
+image grayscale
+image histogram
+
+repository checkout 2
+image grayscale
+image histogram
+
+repository checkout 3
+image grayscale
+image histogram
+
+repository save
+
+DONE 1
+
+image add D:\projetos\flower.png
+image add D:\projetos\satelite.png
+image add D:\projetos\cell.png
+
+image grayscale
+image noise salt-and-pepper 10
+
+repository checkout 2
+image grayscale
+image noise salt-and-pepper 10
+
+repository checkout 3
+image grayscale
+image noise salt-and-pepper 10
+
+repository save
+
+
+#########
+
+image add D:\projetos\res\img\flower_noise.png
+image add D:\projetos\res\img\satelite_noise.png
+image add D:\projetos\res\img\cell_noise.png
+image filter low-pass-smooth 0.06 0.08
+repository checkout 2
+image filter low-pass-smooth 0.06 0.08
+repository checkout 3
+image filter low-pass-smooth 0.06 0.08
